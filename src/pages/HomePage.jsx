@@ -57,7 +57,14 @@ export default function HomePage({ onLogin }) {
 
   return (
     <div className="min-h-screen bg-[#FDF8F2] text-gray-900 font-sans relative overflow-x-hidden">
-      
+      <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
+        <img 
+          src="/Dhandha_Studio_Logo_2.png" 
+          alt="" 
+          className="w-[60%] opacity-[0.08] rotate-0 scale-150 filter grayscale"
+        />
+      </div>
+
       {/* Fixed Top Nav - Animation: Slide Down */}
       <nav className="animate-slide-down fixed top-0 left-0 right-0 bg-[#FDF8F2]/95 backdrop-blur-lg border-b border-amber-100/30 z-50 px-6 py-4 shadow-sm">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -152,7 +159,7 @@ export default function HomePage({ onLogin }) {
       <section id="pricing" className="py-28 px-6 bg-amber-50/60 scroll-mt-24">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl lg:text-6xl font-black text-center text-gray-900 mb-20 tracking-tight">Simple & Transparent Pricing</h2>
-          <div className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto backdrop-blur-sm">
             <div className="bg-white/90 rounded-3xl p-12 shadow-2xl border border-amber-200/50 hover:shadow-3xl transition-shadow">
               <h3 className="text-3xl font-black text-gray-900 mb-6">Small Traders</h3>
               <div className="text-6xl font-black text-amber-700 mb-2">₹15</div>
@@ -180,7 +187,7 @@ export default function HomePage({ onLogin }) {
           
           <div className="space-y-6">
             {faqData.map((faq, index) => (
-              <div key={index} className="bg-gradient-to-r from-amber-50/50 to-orange-50/30 rounded-3xl border border-amber-200/50 overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div key={index} className="bg-gradient-to-r from-amber-50/50 to-orange-50/30 backdrop-blur-sm rounded-3xl border border-amber-200/50 overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <button 
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full px-10 py-7 flex items-center justify-between text-left hover:bg-amber-50/50 transition-all"
