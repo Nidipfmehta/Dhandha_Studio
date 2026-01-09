@@ -89,10 +89,10 @@ export default function HomePage({ onLogin }) {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FDF8F2] text-gray-900 font-sans relative overflow-x-hidden">
+    <div className="min-h-screen bg-[#FDF8F2] text-gray-900 font-sans relative overflow-x-hidden pt-20">
       <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
         <img 
-          src="/Dhandha_Studio_Logo_2.png" 
+          src="/DSLogo.png" 
           alt="" 
           className="w-[60%] opacity-[0.08] rotate-0 scale-150 filter grayscale"
         />
@@ -107,7 +107,7 @@ export default function HomePage({ onLogin }) {
           >
             <div className="flex items-center justify-center">
               <img 
-                src="/Dhandha_Studio_Logo.png" 
+                src="/DSLogo.png" 
                 alt="Dhandha Studio Logo" 
                 className="h-10 w-auto object-contain" 
               />
