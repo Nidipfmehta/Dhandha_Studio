@@ -1,17 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function LoginPage({ onLogin }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [role, setRole] = useState("user"); // 'user' or 'admin'
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    setLoading(true);
+
+    // Replace with your real auth logic
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1500)); // Simulated delay
+      onLogin?.({ email, role });
+    } catch {
+      setError("Invalid credentials. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div
-      className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-pink-900 text-white overflow-hidden relative flex items-center justify-center px-4"
+      className="min-h-screen bg-[#FDF8F2] text-gray-900 font-sans relative overflow-hidden flex items-center justify-center px-4"
       role="main"
-      aria-label="Login - Virtual Mannequin Studio"
+      aria-label="Login - Dhandha Studio"
     >
-      {/* Animated Background Blobs (same as HomePage & Dashboard) */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none" aria-hidden="true">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
-        <div className="absolute top-40 right-20 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
+      {/* Subtle logo background overlay – same as homepage */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 opacity-[0.07]" aria-hidden="true">
+        <img
+          src="/Dhandha_Studio_Logo.png"
+          alt=""
+          className="w-[60%] md:w-[55%] lg:w-[50%] scale-125 rotate-3 filter grayscale"
+        />
       </div>
 
       {/* Login Card */}
@@ -20,24 +44,46 @@ export default function LoginPage({ onLogin }) {
         role="region"
         aria-labelledby="login-heading"
       >
-        {/* Glow backdrop */}
-        <div className="absolute -inset-6 bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-rose-500/20 rounded-3xl blur-2xl opacity-70"></div>
+        {/* Soft glow backdrop */}
+        <div className="absolute -inset-6 bg-gradient-to-r from-[#A67C52]/10 via-[#4A3728]/10 to-[#A67C52]/10 rounded-3xl blur-2xl opacity-40"></div>
 
-        <div className="relative bg-white/5 backdrop-blur-3xl rounded-3xl p-10 border border-white/10 shadow-2xl hover:shadow-3xl hover:shadow-pink-500/30 transition-all duration-700">
+        <div className="relative bg-white/92 backdrop-blur-xl rounded-3xl p-10 border border-[#A67C52]/20 shadow-2xl hover:shadow-3xl hover:shadow-[#A67C52]/30 transition-all duration-700">
           {/* Logo & Title */}
           <div className="flex flex-col items-center mb-10">
-            <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-500 rounded-2xl shadow-lg flex items-center justify-center animate-pulse mb-6">
-              <span className="text-2xl font-bold select-none">VM</span>
+            <div className="w-16 h-16 bg-gradient-to-br from-[#A67C52] to-[#4A3728] rounded-2xl shadow-lg flex items-center justify-center mb-6">
+              <span className="text-3xl font-black text-white">ध</span>
             </div>
             <h2
               id="login-heading"
-              className="text-4xl font-black tracking-tight bg-gradient-to-r from-white via-indigo-100 to-pink-200 bg-clip-text text-transparent drop-shadow-2xl"
+              className="text-4xl font-serif font-extrabold text-[#4A3728] tracking-tight drop-shadow-sm"
             >
               Welcome Back
             </h2>
-            <p className="mt-3 text-indigo-200 opacity-80 text-center">
+            <p className="mt-3 text-[#6B4F35] opacity-90 text-center font-medium">
               Choose your role to continue
             </p>
+          </div>
+
+          {/* Role Toggle */}
+          <div className="flex justify-center mb-10 bg-[#F4EDE4]/60 backdrop-blur-sm rounded-full p-1.5 border border-[#A67C52]/20 shadow-inner">
+            <button
+              type="button"
+              onClick={() => setRole("user")}
+              className={`px-6 py-3 rounded-full text-base font-medium transition-all duration-300 ${
+                role === "user" ? "bg-[#4A3728] text-white shadow-md" : "text-[#6B4F35] hover:bg-[#A67C52]/10"
+              }`}
+            >
+              User
+            </button>
+            <button
+              type="button"
+              onClick={() => setRole("admin")}
+              className={`px-6 py-3 rounded-full text-base font-medium transition-all duration-300 ${
+                role === "admin" ? "bg-[#4A3728] text-white shadow-md" : "text-[#6B4F35] hover:bg-[#A67C52]/10"
+              }`}
+            >
+              Admin
+            </button>
           </div>
 
           {/* Input Fields */}
@@ -46,7 +92,9 @@ export default function LoginPage({ onLogin }) {
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full px-6 py-4 bg-white/10 backdrop-blur border border-white/20 rounded-2xl focus:outline-none focus:border-white/50 focus:bg-white/15 focus:ring-4 focus:ring-pink-500/30 transition-all duration-300 placeholder-indigo-300/60 text-white"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full px-6 py-4 bg-[#F4EDE4]/60 border border-[#A67C52]/30 rounded-xl focus:outline-none focus:border-[#A67C52] focus:bg-[#F4EDE4]/70 focus:ring-2 focus:ring-[#A67C52]/30 transition-all duration-300 placeholder-[#6B4F35]/70 text-[#4A3728]"
                 aria-label="Email address"
               />
             </div>
@@ -54,61 +102,62 @@ export default function LoginPage({ onLogin }) {
               <input
                 type="password"
                 placeholder="Password"
-                className="w-full px-6 py-4 bg-white/10 backdrop-blur border border-white/20 rounded-2xl focus:outline-none focus:border-white/50 focus:bg-white/15 focus:ring-4 focus:ring-pink-500/30 transition-all duration-300 placeholder-indigo-300/60 text-white"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full px-6 py-4 bg-[#F4EDE4]/60 border border-[#A67C52]/30 rounded-xl focus:outline-none focus:border-[#A67C52] focus:bg-[#F4EDE4]/70 focus:ring-2 focus:ring-[#A67C52]/30 transition-all duration-300 placeholder-[#6B4F35]/70 text-[#4A3728]"
                 aria-label="Password"
               />
             </div>
           </div>
 
+          {/* Error Message */}
+          {error && (
+            <p className="text-center text-red-600 text-sm font-medium bg-red-50/80 py-3 rounded-xl">
+              {error}
+            </p>
+          )}
+
           {/* Login Buttons */}
           <div className="space-y-4">
             <button
-              onClick={() => onLogin("user")}
-              className="group relative w-full py-5 bg-gradient-to-r from-pink-500 to-rose-500 text-lg font-bold rounded-3xl shadow-2xl hover:shadow-pink-500/50 transition-all duration-300 hover:-translate-y-2 active:scale-95 overflow-hidden"
+              onClick={handleSubmit}
+              disabled={loading}
+              className="group relative w-full py-5 bg-gradient-to-r from-[#4A3728] to-[#6B4F35] text-white text-lg font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:from-[#A67C52] hover:to-[#D4A373] transition-all duration-500 hover:-translate-y-1 active:scale-95 overflow-hidden flex items-center justify-center gap-3"
               type="button"
-              aria-label="Login as regular user"
+              aria-label="Login as selected role"
             >
-              <span className="absolute inset-0 bg-white/20 -translate-x-full group-hover:translate-x-full transition-transform duration-700 rounded-3xl"></span>
-              <span className="relative">Login as User</span>
-            </button>
-
-            <button
-              onClick={() => onLogin("admin")}
-              className="group relative w-full py-5 bg-white/10 backdrop-blur-xl border border-white/30 rounded-3xl font-semibold hover:bg-white/20 hover:border-white/50 hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300 hover:-translate-y-1 active:scale-95"
-              type="button"
-              aria-label="Login as administrator"
-            >
-              <span className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-3xl"></span>
-              <span className="relative">Login as Admin</span>
+              <span className="absolute inset-0 bg-white/10 -translate-x-full group-hover:translate-x-full transition-transform duration-700 rounded-2xl"></span>
+              {loading ? (
+                <>
+                  <svg className="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+                  </svg>
+                  Authenticating...
+                </>
+              ) : (
+                `Login as ${role === "user" ? "User" : "Admin"}`
+              )}
             </button>
           </div>
 
           {/* Forgot Password */}
-          <p className="mt-8 text-center text-indigo-200 opacity-70 text-sm">
+          <p className="mt-8 text-center text-[#6B4F35] opacity-80 text-sm">
             Forgot your password?{" "}
-            <span className="underline hover:text-white cursor-pointer transition">
+            <span className="underline hover:text-[#A67C52] cursor-pointer transition">
               Reset it here
             </span>
           </p>
         </div>
       </div>
 
-      {/* Shared Animations (same across pages) */}
+      {/* Shared Animations */}
       <style jsx>{`
-        @keyframes blob {
-          0% { transform: translate(0px, 0px) scale(1); }
-          33% { transform: translate(30px, -50px) scale(1.1); }
-          66% { transform: translate(-20px, 20px) scale(0.9); }
-          100% { transform: translate(0px, 0px) scale(1); }
-        }
         @keyframes fade-in-up {
           from { opacity: 0; transform: translateY(40px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        .animate-blob { animation: blob 7s infinite; }
         .animate-fade-in-up { animation: fade-in-up 1s ease-out 0.3s both; }
-        .animation-delay-2000 { animation-delay: 2s; }
-        .animation-delay-4000 { animation-delay: 4s; }
       `}</style>
     </div>
   );
