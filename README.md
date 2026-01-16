@@ -1,16 +1,54 @@
-# React + Vite
+# Dhandha Studio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Dhandha Studio** is an AI-powered visual commerce platform built specifically for the Indian ethnic wear industry. It bridges the gap between raw product photography and high-end marketing visuals, allowing traders and manufacturers to generate catalog-ready images and social media reels instantly.
 
-Currently, two official plugins are available:
+## Project Overview
+The platform uses generative AI to transform mobile-clicked photos into professional studio-quality assets. It features a dual-dashboard system for both individual traders and large-scale brands, with specialized tools for Indian fashion categories such as:
+* **Anarkali Suits**
+* **Embroidered Sets**
+* **Wedding Attire**
+* **Printed Kurtis**
+* **Jewelry & Kids Wear**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+* **Frontend:** React.js
+* **Styling:** Tailwind CSS
+* **Animations:** Custom CSS3 keyframes for infinite scrolling and 3D flip card effects
+* **Theme:** Luxury Ethnic Palette (Deep Browns and Gold accents)
 
-## React Compiler
+## Service Tiers
+Based on the platform's business logic:
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+| Feature | Rs 15 Plan | Rs 30 Plan |
+| :--- | :--- | :--- |
+| **Target Audience** | Small Traders and Manufacturers | Large Scale Manufacturers and Brands |
+| **Image Quality** | Only 2k Image | 4k Image available on request |
+| **Aspect Ratio** | Single Aspect Ratio 4:3 | Different Aspect Ratios Available |
+| **Upload Capacity** | Single Photo Upload | Upto 10 Photo upload |
+| **Customization** | Limited Customisation with instructions | Multiple Customisations Available |
+| **Branding** | No Watermarking according to brand | Watermarking with brand name possible |
+| **Access** | Single User Access | Upto 4 User Access on Whatsapp |
+| **Dashboard** | No Web Dashboard | Web Dashboard Available |
+| **Integrations** | No Integrations possible | API Keys available for integrations |
 
-## Expanding the ESLint configuration
+## Key Components
+* **Infinite Scroller:** A high-performance CSS animation displaying AI transformations.
+* **Comparison Engine:** Interactive flip-cards allowing users to compare 'Raw' vs 'Generated' photos.
+* **Reel Preview:** A dedicated section for upcoming AI-generated video content.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation & Setup
+
+To get the project running locally, execute the following commands in your terminal:
+
+```bash
+# Clone the repository
+git clone [https://github.com/yourusername/dhandha-studio.git](https://github.com/yourusername/dhandha-studio.git)
+
+# Navigate into the project folder
+cd dhandha-studio
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev

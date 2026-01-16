@@ -22,8 +22,12 @@ export default function AdminDashboard({ onLogout }) {
         {/* Header */}
         <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-16 animate-slide-up">
           <div className="flex items-center gap-4">
-            <div className="w-14 h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-[#A67C52] to-[#4A3728] rounded-2xl shadow-lg flex items-center justify-center">
-              <span className="text-3xl lg:text-4xl font-black text-white">ध</span>
+            <div className="flex items-center justify-center">
+              <img 
+                src="/Dhandha_Studio_Logo.png" 
+                alt="Dhandha Studio Logo" 
+                className="h-17 w-auto object-contain" 
+              />
             </div>
             <div>
               <h1 className="text-3xl lg:text-4xl font-serif font-extrabold text-[#4A3728] tracking-tight uppercase drop-shadow-sm">

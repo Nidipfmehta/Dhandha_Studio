@@ -29,7 +29,7 @@ export default function UserDashboard({ onLogout }) {
               <img 
                 src="/Dhandha_Studio_Logo.png" 
                 alt="Dhandha Studio Logo" 
-                className="h-13 w-auto object-contain" 
+                className="h-17 w-auto object-contain" 
               />
             </div>
             <div>
