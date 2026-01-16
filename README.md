@@ -1,16 +1,57 @@
-# React + Vite
+🎨 Dhandha Studio
+Enabling Bharat's Fashion Industry with AI
+Dhandha Studio is an AI-powered platform designed to help ethnic wear traders and retailers generate high-quality fashion visuals instantly. By transforming "raw" photos into professional catalog-ready images and reels, we empower the local fashion industry to compete at a global scale.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Key Features
+AI Visual Generation: Instantly convert simple product photos into high-fidelity fashion imagery.
 
-Currently, two official plugins are available:
+Interactive Comparisons: Hover or click cards to flip between the "Raw Photo" and the "AI-Enhanced" version.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Infinite Scrolling Gallery: A seamless, high-speed showcase of user-generated content and fashion categories.
 
-## React Compiler
+Dynamic Reels (Coming Soon): Automated fashion reel generation for social media marketing.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Dual-Role Dashboard: Custom interfaces for both Users (Traders) and Admins (Manufacturers).
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack
+Frontend: React.js + Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Animations: CSS3 Keyframes & Framer Motion
+
+Styling: Modern, minimalist aesthetic with a "Luxury Ethnic" color palette (#4A3728, #A67C52).
+
+🚀 Getting Started
+Clone the repository:
+
+Bash
+
+git clone https://github.com/your-username/dhandha_studio.git
+Install dependencies:
+
+Bash
+
+npm install
+Run the development server:
+
+Bash
+
+npm start
+📸 Project Showcase
+The project features a unique Flip-Card gallery that demonstrates the "Before and After" of our AI processing:
+
+Embroidered Suits
+
+Anarkali Sets
+
+Kids Wear
+
+Wedding Attire
+
+🏗️ Roadmap
+[x] Infinite Scroll Animation
+
+[x] Responsive Login UI with Role Selection
+
+[ ] Integration of Web Dashboard
+
+[ ] API Connectivity for Batch Processing
