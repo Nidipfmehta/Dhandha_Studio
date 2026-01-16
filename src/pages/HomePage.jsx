@@ -46,59 +46,75 @@ export default function HomePage({ onLogin }) {
 
   const scrollPhotos = [
   { 
-    src: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=80", 
-    backSrc: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500&q=80", 
-    label: "Beauty" 
+    // src: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=80", 
+    // backSrc: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500&q=80",
+    src : "/Images/Gen 2.jpg",
+    backSrc : "/Images/Raw 2.jpg",
+    label: "Men's Casual" 
   },
   { 
-    src: "https://images.unsplash.com/photo-1529139574466-a302d2052574?w=500&q=80", 
-    backSrc: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&q=80", 
-    label: "Electronics" 
+    // src: "https://images.unsplash.com/photo-1529139574466-a302d2052574?w=500&q=80", 
+    // backSrc: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&q=80", 
+    src : "/Images/Gen 3.jpg",
+    backSrc : "/Images/Raw 3.jpg",
+    label: "Women's Ethnic" 
   },
   { 
-    src: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&q=80", 
-    backSrc: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&q=80",
-    label: "Lifestyle" 
+    // src: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&q=80", 
+    // backSrc: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&q=80",
+    src : "/Images/Gen 4.jpg",
+    backSrc : "/Images/Raw 4.jpg",
+    label: "Anarkali Suit" 
   },
   { 
-    src: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&q=80", 
-    backSrc: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&q=80",
-    label: "Food" 
+    // src: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&q=80", 
+    // backSrc: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&q=80",
+    src : "/Images/Gen 5.jpg",
+    backSrc : "/Images/Raw 5.jpg",
+    label: "Kids Wear" 
   },
   { 
-    src: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&q=80", 
-    backSrc: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500&q=80",
-    label: "Wellness" 
+    // src: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&q=80", 
+    // backSrc: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500&q=80",
+    src : "/Images/Gen 6.jpg",
+    backSrc : "/Images/Raw 6.jpg",
+    label: "Embroidered" 
   },
   { 
-    src: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500&q=80", 
-    backSrc: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=80",
-    label: "Tech" 
+    // src: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500&q=80", 
+    // backSrc: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=80",
+    src : "/Images/Gen 7.jpg",
+    backSrc : "/Images/Raw 7.jpg",
+    label: "Wedding Attire" 
   },
   { 
-    src: "https://images.unsplash.com/photo-1445205170230-053b83016050?w=500&q=80", 
-    backSrc: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&q=80",
-    label: "Fashion" 
+    // src: "https://images.unsplash.com/photo-1445205170230-053b83016050?w=500&q=80", 
+    // backSrc: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&q=80",
+    src : "/Images/Gen 8.jpg",
+    backSrc : "/Images/Raw 8.jpg",
+    label: "Printed Kurti" 
   },
   { 
-    src: "https://images.unsplash.com/photo-1574259514749-0e6b8cd237e2?w=500&q=80", 
-    backSrc: "https://images.unsplash.com/photo-1571115622295-3a23c9cfd195?w=500&q=80",
-    label: "Jewelry" 
+    // src: "https://images.unsplash.com/photo-1574259514749-0e6b8cd237e2?w=500&q=80", 
+    // backSrc: "https://images.unsplash.com/photo-1571115622295-3a23c9cfd195?w=500&q=80",
+    src : "/Images/Gen 9.jpg",
+    backSrc : "/Images/Raw 9.jpg",
+    label: "COLOUR VARIANTS" 
   }
 ];
 
 
   const scrollReels = [
-  "https://images.unsplash.com/photo-1611558709796-cfd43d706e25?w=400&q=80",
-  "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=400&q=80",
-  "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&q=80",
-  "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80",
-  "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&q=80",
-  "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=400&q=80",
-  "https://images.unsplash.com/photo-1485230205346-71acb9518d9c?w=400&q=80",
-  "https://images.unsplash.com/photo-1502323777036-f29e3972d82f?w=400&q=80",
-  "https://images.unsplash.com/photo-1571115622295-3a23c9cfd195?w=400&q=80",
-  "https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&q=80"
+  "/Images/Gen 9.jpg",
+  "/Images/Gen 8.jpg",
+  "/Images/Gen 7.jpg",
+  "/Images/Gen 6.jpg",
+  "/Images/Gen 5.jpg",
+  "/Images/Gen 4.jpg",
+  "/Images/Gen 3.jpg",
+  "/Images/Gen 2.jpg",
+  // "https://images.unsplash.com/photo-1571115622295-3a23c9cfd195?w=400&q=80",
+  // "https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&q=80"
 ];
 
 
@@ -107,11 +123,12 @@ export default function HomePage({ onLogin }) {
     <div className="min-h-screen bg-[#F4EDE4] text-[#4A3728] font-sans relative overflow-x-hidden">
       {/* Texture Layer */}
       <div className="fixed inset-0 pointer-events-none opacity-30 z-0 bg-[url('https://www.transparenttextures.com/patterns/leather.png')]"></div>
+
       <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
         <img 
-          src="/DSLogo.png" 
+          src="/Dhandha_Studio_Logo_2.png" 
           alt="" 
-          className="w-[80%] opacity-[0.05] scale-160 filter grayscale"
+          className="w-[70%] opacity-[0.07] scale-170 filter grayscale"
         />
       </div>
 
@@ -124,9 +141,9 @@ export default function HomePage({ onLogin }) {
           >
             <div className="flex items-center justify-center">
               <img 
-                src="/DSLogo.png" 
+                src="/Dhandha_Studio_Logo.png" 
                 alt="Dhandha Studio Logo" 
-                className="h-10 w-auto object-contain" 
+                className="h-11 w-auto object-contain" 
               />
             </div>
             <span className="font-serif font-bold text-2xl hidden sm:block tracking-tight text-[#4A3728]">
@@ -191,8 +208,8 @@ export default function HomePage({ onLogin }) {
                   {/* Front side */}
                   <div className="absolute inset-0 backface-hidden rounded-xl shadow-2xl overflow-hidden border-2 border-[#A67C52]/20">
                     <img src={item.src} className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-500" alt="" />
-                    <div className="absolute bottom-5 left-1/2 -translate-x-1/2">
-                      <span className="bg-[#4A3728]/90 backdrop-blur-md px-6 py-2 rounded-sm text-[10px] font-bold uppercase tracking-[0.2em] text-[#F4EDE4] shadow-md border border-[#A67C52]/30">
+                    <div className="absolute bottom-5 left-0 right-0 flex justify-center px-4">
+                      <span className="bg-[#4A3728]/95 backdrop-blur-md px-4 py-2 rounded-sm text-[11px] font-bold uppercase tracking-[0.15em] text-[#F4EDE4] shadow-md border border-[#A67C52]/30 whitespace-nowrap text-center inline-block min-w-[140px]">
                         {item.label}
                       </span>
                     </div>
@@ -203,7 +220,7 @@ export default function HomePage({ onLogin }) {
                     <img src={item.backSrc || item.src} className="w-full h-full object-cover" alt="AI Generated Version" />
                     <div className="absolute inset-0 bg-[#4A3728]/40 flex items-center justify-center">
                       <div className="bg-[#A67C52] text-[#F4EDE4] px-5 py-2 rounded-sm font-bold text-[10px] uppercase tracking-widest shadow-lg">
-                        AI Result
+                        Raw Photo
                       </div>
                     </div>
                   </div>
@@ -211,15 +228,23 @@ export default function HomePage({ onLogin }) {
               </div>
             ))}
           </div>
+          <div className="mt-18 flex justify-end px-4">
+            <h3 className="text-[#6B4F35] text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] border-t border-[#A67C52]/30 pt-4">
+              *User Generated Images
+            </h3>
+          </div>
         </div>
           
           {/* Scrolling Reels - Refined Version */}
           <div id="features" className="animate-slide-up delay-400 mb-16 lg:mb-20">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold text-[#4A3728] mb-4 lg:mb-6 tracking-tight uppercase drop-shadow-sm">
-              Examples of Reels
+              Examples of Reels 
             </h2>
             <p className="text-[#6B4F35] text-lg lg:text-xl font-medium italic tracking-wide">
               See what our AI creates for leading brands
+            </p>
+            <p className="text-[#6B4F35] text-lg lg:text-xl font-medium italic tracking-wide">
+              (Coming Soon)
             </p>
           </div>
 
@@ -275,41 +300,101 @@ export default function HomePage({ onLogin }) {
         </div>
         
         <div className="max-w-5xl mx-auto relative z-10">
-          {/* Perfectly centered, responsive title */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-black text-center text-[#F4EDE4] mb-12 lg:mb-20 tracking-tight uppercase leading-tight drop-shadow-lg">
             PRICING
           </h2>
           
-          {/* Responsive grid - Perfect aspect ratio */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto items-stretch">
             
-            {/* LEFT CARD - Small Traders */}
+            {/* LEFT CARD - Small Traders (₹15) */}
             <div className="group bg-[#F4EDE4]/95 backdrop-blur-sm rounded-[1.25rem] p-6 sm:p-8 lg:p-12 shadow-[0_20px_40px_rgba(0,0,0,0.15)] border-t-8 border-[#A67C52]/90 hover:shadow-[0_30px_60px_rgba(166,124,82,0.3)] transition-all duration-500 hover:-translate-y-2 h-full flex flex-col justify-between hover:border-t-[#A67C52]">
               <div>
-                <h3 className="text-base sm:text-lg lg:text-xl font-serif font-black text-[#4A3728] mb-4 sm:mb-6 uppercase tracking-[0.1em] leading-tight">Small Traders</h3>
+                <h3 className="text-base sm:text-lg lg:text-xl font-serif font-black text-[#4A3728] mb-4 sm:mb-6 uppercase tracking-[0.1em] leading-tight">Small Traders & Manufacturers</h3>
                 <div className="text-4xl sm:text-5xl lg:text-6xl font-serif font-black text-[#A67C52] mb-2 lg:mb-4 leading-none drop-shadow-md">₹15</div>
-                <p className="text-[#6B4F35]/90 mb-8 lg:mb-10 font-bold uppercase text-xs sm:text-sm tracking-[0.15em] leading-tight">per month</p>
+                <p className="text-[#6B4F35]/90 mb-8 lg:mb-10 font-bold uppercase text-xs sm:text-sm tracking-[0.15em] leading-tight">per photo</p>
+                
+                <ul className="space-y-3 mb-8 text-[#4A3728]/90 text-xs sm:text-sm font-medium">
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#A67C52] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    Single Aspect Ratio 4:3
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#A67C52] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    Only 2k Image
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#A67C52] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    Single Photo Upload
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#A67C52] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    Limited Customisation with instructions
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" /></svg>
+                    No Watermarking according to brand
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#A67C52] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    Single User Access
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" /></svg>
+                    No Web Dashboard
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" /></svg>
+                    No Integrations possible
+                  </li>
+                </ul>
               </div>
-              <button className="w-full py-3 sm:py-4 lg:py-5 border-2 border-[#A67C52]/90 text-[#A67C52] font-serif font-black uppercase tracking-[0.15em] text-xs sm:text-sm rounded-lg hover:bg-[#A67C52] hover:text-[#F4EDE4] hover:shadow-lg hover:shadow-amber-500/30 transition-all duration-300 group-hover:scale-[1.02] active:scale-95">
-                Get Started
-              </button>
             </div>
 
-            {/* RIGHT CARD - Manufacturers (POPULAR) */}
+            {/* RIGHT CARD - Manufacturers (₹30) - POPULAR */}
             <div className="group relative bg-gradient-to-br from-[#A67C52]/95 to-[#6B4F35]/95 backdrop-blur-md rounded-[1.25rem] p-6 sm:p-8 lg:p-12 shadow-[0_25px_50px_rgba(0,0,0,0.25)] text-[#F4EDE4] h-full flex flex-col justify-between hover:shadow-[0_35px_70px_rgba(166,124,82,0.4)] transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]">
               
-              {/* Popular badge */}
               <div className="absolute -top-4 right-6 bg-[#4A3728]/95 px-4 py-2 rounded-t-2xl rounded-br-lg text-[10px] sm:text-xs lg:text-sm font-black uppercase tracking-[0.2em] shadow-lg border border-[#A67C52]/50 backdrop-blur-sm">POPULAR</div>
               
               <div>
-                <h3 className="text-base sm:text-lg lg:text-xl font-serif font-black mb-4 sm:mb-6 uppercase tracking-[0.1em] leading-tight drop-shadow-sm">Manufacturers</h3>
+                <h3 className="text-base sm:text-lg lg:text-xl font-serif font-black mb-4 sm:mb-6 uppercase tracking-[0.1em] leading-tight drop-shadow-sm">Large Scale Manufacturers & Brands</h3>
                 <div className="text-4xl sm:text-5xl lg:text-6xl font-serif font-black mb-2 lg:mb-4 leading-none drop-shadow-lg">₹30</div>
-                <p className="text-[#F4EDE4]/90 mb-8 lg:mb-10 font-bold uppercase text-xs sm:text-sm tracking-[0.15em] leading-tight">Save 20% • Billed Annually</p>
+                <p className="text-[#F4EDE4]/90 mb-8 lg:mb-10 font-bold uppercase text-xs sm:text-sm tracking-[0.15em] leading-tight">Per Photo</p>
+                
+                <ul className="space-y-3 mb-8 text-[#F4EDE4]/90 text-xs sm:text-sm font-medium">
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#F4EDE4] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    Different Aspect Ratios Available
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#F4EDE4] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    4k Image available on request
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#F4EDE4] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    Upto 10 Photo upload
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#F4EDE4] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    Multiple Customisations Available
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#F4EDE4] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    Watermarking with brand name possible
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#F4EDE4] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    Upto 4 User Access on Whatsapp & Dashboard
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#F4EDE4] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    Web Dashboard Available
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-[#F4EDE4] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    API Keys available for integrations
+                  </li>
+                </ul>
               </div>
-              
-              <button className="w-full py-3 sm:py-4 lg:py-5 bg-[#F4EDE4]/95 text-[#4A3728] font-serif font-black uppercase tracking-[0.15em] text-xs sm:text-sm rounded-lg shadow-inner hover:bg-[#4A3728]/95 hover:text-[#F4EDE4] hover:shadow-lg hover:shadow-white/20 transition-all duration-300 active:scale-95 border border-white/30 backdrop-blur-sm">
-                Get Started
-              </button>
             </div>
           </div>
         </div>
@@ -458,8 +543,8 @@ export default function HomePage({ onLogin }) {
                     />
                   </div>
                   <input
-                    type="email"
-                    placeholder="Email Address"
+                    type="phone_number"
+                    placeholder="Phone Number"
                     className="w-full px-6 py-4 bg-[#F4EDE4]/50 border border-[#A67C52]/30 rounded-xl focus:border-[#A67C52] focus:ring-2 focus:ring-[#A67C52]/30 outline-none text-[#4A3728] placeholder-[#6B4F35]/60 transition-all duration-300"
                   />
                   <textarea
@@ -480,83 +565,75 @@ export default function HomePage({ onLogin }) {
         </div>
       </section>
 
-       {/* Footer */}
+       {/* Footer - Credit MOVED under Dhandha Studio */}
         <footer className="bg-[#2D2118] text-[#A67C52] pt-24 pb-16 px-6 overflow-hidden">
-          {/* Subtle background texture overlay */}
-          <div className="absolute inset-0 opacity-5 pointer-events-none">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#A67C52]/5 to-[#2D2118]"></div>
-          </div>
+        {/* Subtle background texture overlay */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#A67C52]/5 to-[#2D2118]"></div>
+        </div>
 
-          <div className="max-w-7xl mx-auto relative z-10">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-12 mb-20">
-              <div className="col-span-2">
-                <h3 className="text-3xl md:text-4xl font-serif font-extrabold mb-4 text-[#F4EDE4] tracking-tight">
-                  Dhandha Studio
-                </h3>
-                <p className="text-[#A67C52] italic text-lg mb-6 font-medium tracking-wide">
-                  "Enabling Bharat's Fashion Industry"
-                </p>
-                <p className="text-[#F4EDE4]/70 text-sm leading-relaxed max-w-md font-light">
-                  Crafting the future of fashion photography through artificial intelligence and bespoke digital visuals.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="font-serif font-bold text-sm mb-6 text-[#F4EDE4] uppercase tracking-widest">Product</h4>
-                <ul className="text-[#A67C52]/80 text-sm space-y-4">
-                  <li>
-                    <button onClick={() => scrollToSection('Features')} className="hover:text-[#F4EDE4] transition-colors duration-300">
-                      Features
-                    </button>
-                  </li>
-                  <li>
-                    <button onClick={() => scrollToSection('Pricing')} className="hover:text-[#F4EDE4] transition-colors duration-300">
-                      Pricing
-                    </button>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="font-serif font-bold text-sm mb-6 text-[#F4EDE4] uppercase tracking-widest">Legal</h4>
-                <ul className="text-[#A67C52]/80 text-sm space-y-4">
-                  <li>
-                    <button onClick={() => setModalContent('privacy-policy')} className="hover:text-[#F4EDE4] transition-colors duration-300">
-                      Privacy Policy
-                    </button>
-                  </li>
-                  <li>
-                    <button onClick={() => setModalContent('terms-of-service')} className="hover:text-[#F4EDE4] transition-colors duration-300">
-                      Terms of Service
-                    </button>
-                  </li>
-                  <li>
-                    <button onClick={() => setModalContent('refund-policy')} className="hover:text-[#F4EDE4] transition-colors duration-300">
-                      Refunds
-                    </button>
-                  </li>
-                </ul>
-              </div>
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-12 mb-12">
+            <div className="col-span-2">
+              <h3 className="text-3xl md:text-4xl font-serif font-extrabold mb-4 text-[#F4EDE4] tracking-tight">
+                Dhandha Studio
+              </h3>
+              <p className="text-[#A67C52] italic text-lg mb-6 font-medium tracking-wide">
+                "Enabling Bharat's Fashion Industry"
+              </p>
+              <p className="text-[#F4EDE4]/70 text-sm leading-relaxed max-w-md font-light">
+                Crafting the future of fashion photography through artificial intelligence and bespoke digital visuals.
+              </p>
             </div>
 
-            <div className="pt-12 border-t border-[#A67C52]/20 flex flex-col md:flex-row items-center justify-between gap-6 text-[#A67C52]/60 text-xs uppercase tracking-widest font-medium">
-              <p>© 2026 Dhandha Studio. All rights reserved.</p>
+            <div>
+              <h4 className="font-serif font-bold text-sm mb-6 text-[#F4EDE4] uppercase tracking-widest">Product</h4>
+              <ul className="text-[#A67C52]/80 text-sm space-y-4">
+                <li><button onClick={() => scrollToSection('Features')} className="hover:text-[#F4EDE4] transition-colors duration-300">Features</button></li>
+                <li><button onClick={() => scrollToSection('Pricing')} className="hover:text-[#F4EDE4] transition-colors duration-300">Pricing</button></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-serif font-bold text-sm mb-6 text-[#F4EDE4] uppercase tracking-widest">Legal</h4>
+              <ul className="text-[#A67C52]/80 text-sm space-y-4">
+                <li><button onClick={() => setModalContent('privacy-policy')} className="hover:text-[#F4EDE4] transition-colors duration-300">Privacy Policy</button></li>
+                <li><button onClick={() => setModalContent('terms-of-service')} className="hover:text-[#F4EDE4] transition-colors duration-300">Terms of Service</button></li>
+                <li><button onClick={() => setModalContent('refund-policy')} className="hover:text-[#F4EDE4] transition-colors duration-300">Refunds</button></li>
+              </ul>
             </div>
           </div>
-        </footer>
 
-        {/* Fixed CTA Button */}
-        <a  
-          href="https://wa.me/919106837578" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="fixed bottom-10 right-8 z-[100] bg-[#4A3728] text-[#F4EDE4] px-6 py-4 rounded-full flex items-center gap-3 shadow-2xl hover:bg-[#A67C52] transition-all font-bold text-[12px] uppercase tracking-widest border border-[#A67C52]/30"
-        >
+          {/* Credit - JUST ABOVE horizontal line */}
+          <div className="flex justify-between mb-8">
+            <a 
+              href="https://www.linkedin.com/in/nidip-mehta-7b1545301/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-1 text-1xs text-[#A67C52]/70 hover:text-[#F4EDE4] transition-all duration-300 hover:underline underline-offset-2"
+            >
+              <svg className="w-3.5 h-3.5 group-hover:-translate-y-0.5 transition-transform duration-300 fill-current" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              Designed by Nidip Mehta
+            </a>
+          </div>
+
+          {/* Horizontal line + Copyright */}
+          <div className="pt-12 border-t border-[#A67C52]/20 flex flex-col md:flex-row items-center justify-between gap-6 text-[#A67C52]/60 text-xs uppercase tracking-widest font-medium">
+            <p>© 2026 Dhandha Studio. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+        {/* Fixed CTA Button - UNCHANGED */}
+        <a href="https://wa.me/919106837578" target="_blank" rel="noopener noreferrer" className="fixed bottom-7 right-8 z-[100] bg-[#4A3728] text-[#F4EDE4] px-6 py-4 rounded-full flex items-center gap-3 shadow-2xl hover:bg-[#A67C52] transition-all font-bold text-[12px] uppercase tracking-widest border border-[#A67C52]/30">
           <svg className="w-5 h-5 text-[#A67C52]" viewBox="0 0 24 24" fill="currentColor">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.632 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
           </svg>
           Try Now
         </a>
+
 
       {/* Legal Modal Rendering */}
       {modalContent && (
@@ -683,7 +760,7 @@ export default function HomePage({ onLogin }) {
         @keyframes slideDown { from { transform: translateY(-100%); } to { transform: translateY(0); } }
         @keyframes slideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-300%); } }
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-400%); } }
         @keyframes scroll-reverse { 0% { transform: translateX(-300%); } 100% { transform: translateX(0); } }
 
         .animate-slide-down { animation: slideDown 0.6s ease-out forwards; }
